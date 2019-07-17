@@ -43,14 +43,18 @@ public class IntStack {
         return stk[ptr-1];
     }
 
-    public void dump() {
-        if(ptr<= 0) System.out.println("Stack is empty");
-        else {
-            for(int i=0; i<ptr; i++) System.out.print(stk[i]+" ");
-            System.out.println();
-        }
+    //Search
+    public int indexOf(int x) {
+        for(int i=0; i<ptr-1; i++)
+            if(stk[i]==x) return i;
+        
+        return -1;
     }
 
+    public void clear() {
+        ptr=0;
+    }
+    
     //Stack all space
     public int capacity() {
         return max;
@@ -58,5 +62,17 @@ public class IntStack {
 
     public int size() {
         return ptr;
+    }
+
+    public boolean isEmpty() {
+        return ptr>=max;
+    }
+
+    public void dump() {
+        if(ptr<= 0) System.out.println("Stack is empty");
+        else {
+            for(int i=0; i<ptr; i++) System.out.print(stk[i]+" ");
+            System.out.println();
+        }
     }
 }
