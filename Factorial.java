@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Factorial_Recursion {
+class Factorial {
     static int Factorial(int n) {
         if(n>0) return n*Factorial(n-1);
         else return 1;
