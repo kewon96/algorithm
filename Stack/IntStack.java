@@ -45,7 +45,7 @@ public class IntStack {
 
     //Search
     public int indexOf(int x) {
-        for(int i=0; i<ptr-1; i++)
+        for(int i=ptr-1; i>=0; i--)
             if(stk[i]==x) return i;
         
         return -1;
