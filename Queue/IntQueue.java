@@ -29,21 +29,44 @@ public class IntQueue {
 
     //Insert data
     public int enque(int x) throws OverflowIntQueueExcetion {
+        if(num>=max) throw new OverflowIntQueueExcetion();
         
-        //Create!
+        que[rear++]=x;
+        num++;
 
+        if(rear==max) rear=0;
+        
+        return x;
     }
 
     public int deque() throws EmptyIntQueueException {
+        if(num<=0) throw new EmptyIntQueueException();
+        
+        int x=que[front++];
+        num--;
 
-        //Create!
+        if(front == max) front=0;
 
+        return x;
     } 
 
     public int peek() throws EmptyIntQueueException {
+        if(num<=0) throw new EmptyIntQueueException();
+        return que[front];
+    }
 
-        //Create!
+    public int indexOf(int x) throws EmptyIntQueueException {
+        for(int i=0; i<num; i++) {
+            int idx=(i+front)%max;
 
+            if(que[idx] == x) return idx;
+        }
+        
+        return -1;
+    }
+
+    public void clear() {
+        front=rear=max=0;
     }
 
     public int capactiy() {
@@ -52,6 +75,10 @@ public class IntQueue {
 
     public int size() {
         return num;
+    }
+
+    public boolean isEmpty() {
+        return num>=max;
     }
 
     public void dump() {
