@@ -3,10 +3,10 @@ import java.util.Scanner;
 class IntQueueTester {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        IntStack s = new IntStack(64);
+        IntQueue s = new IntQueue(64);
 
         while(true) {
-            System.out.println("Data count : "+s.size() + " / "+s.capacity());
+            System.out.println("Data count : "+s.size() + " / "+s.capactiy());
             System.out.print("(1)Enque (2)Deque (3)Peek (4)Dump (0)End : ");
 
             //input in (1 2 3 4 0)
@@ -22,7 +22,7 @@ class IntQueueTester {
                     System.out.print("Data : ");
                     x=sc.nextInt();
                     try {
-                        s.push(x);
+                        s.enque(x);
                     }
                     catch (IntQueue.OverflowIntQueueExcetion e) {
                         System.out.println("Queue is Maximum!!");
@@ -31,8 +31,8 @@ class IntQueueTester {
 
                 case 2 :
                     try {
-                        x=s.pop();
-                        System.out.println("Pop data is "+x+".");
+                        x=s.deque();
+                        System.out.println("DeQue data is "+x+".");
                     }
                     catch (IntQueue.EmptyIntQueueException e) {
                         System.out.println("Queue is empty!!");
