@@ -16,6 +16,6 @@ class Factorial_v2 {
         int y = sc2.nextInt();
         System.out.println(x+"_P_"+y);
 
-        System.out.println(x+"--->Factorial is---> "+Factorial(x)/Factorial(x-y));
+        System.out.println(Factorial(x)/Factorial(x-y));
     } 
 }
