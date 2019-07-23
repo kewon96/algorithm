@@ -8,14 +8,15 @@ class Factorial_v2 {
 
     public static void main(String[] args) {
         Scanner sc1 = new Scanner(System.in);
-        Scanner sc2 = new Scanner(System.in);
 
         System.out.print("앞수 : ");
         int x = sc1.nextInt();
         System.out.print("뒷수 : ");
-        int y = sc2.nextInt();
-        System.out.println(x+"_P_"+y);
+        int y = sc1.nextInt();
+        System.out.print(x+"_P_"+y);
+        System.out.print(" ----------------> ");
+        System.out.print(Factorial(x)/Factorial(x-y));
 
-        System.out.println(Factorial(x)/Factorial(x-y));
+        sc1.close();
     } 
 }
