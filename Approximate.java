@@ -20,19 +20,21 @@ class Approximate {
 
         //배열오름차순으로 정렬
         Arrays.sort(array);
+        int index=Arrays.asList(array).indexOf(value); // 위치값
         
-        System.out.println("너가 찾는 값인 "+value+"의 값은 " +Arrays.asList(array).indexOf(value)+"에 있어!");
-        /*
-        //오른쪽으로 이동
-        for(int j=찾는 값의 위치; ) {
+        // System.out.println("너가 찾는 값인 "+value+"의 값은 " +index+"에 있어!");
+        // System.out.println("위치 잘 기억해놔!");
+        
+        //오른쪽에 있는거
+        int index_right = index+1;
+        int alpha=array[index_right];
+        System.out.println(alpha);
 
-        }
-
-        //왼쪽으로 이동
-        for() {
-
-        }
-        */
+        //왼쪽에 있는거
+        int index_left = index-1;
+        int beta=array[index_left];
+        System.out.println(beta);
+        
         sc.close();
     }
 }
