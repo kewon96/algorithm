@@ -27,14 +27,18 @@ class Approximate {
         
         //오른쪽에 있는거
         int index_right = index+1;
-        int alpha=array[index_right];
-        System.out.println(alpha);
+        int alpha=array[index_right]; //정상출력
+        int index_alpha=alpha-value;
 
         //왼쪽에 있는거
         int index_left = index-1;
-        int beta=array[index_left];
-        System.out.println(beta);
-        
+        int beta=array[index_left]; //정상출력
+        int index_beta=value-beta;
+
+        if(index_alpha>index_beta) System.out.println(index_left+"번째에 있는 "+beta+"이(가) 가까워!");
+        else if(index_alpha==index_beta) System.out.println(index_left+"번째에 있는 "+beta+"이(가) 양쪽에 있어!");
+        else System.out.println(index_right+"번째에 있는 "+alpha+"이(가) 가까워!");
+
         sc.close();
     }
 }
