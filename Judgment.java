@@ -6,7 +6,7 @@ class Judgment {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("정수하나 입력하시오 : ");
+        System.out.print("정수하나 입력하시오 : ");
         int n = sc.nextInt();
 
         if(n>0) System.out.println("양수넹");
