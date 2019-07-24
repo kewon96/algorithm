@@ -2,6 +2,23 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 class Approximate {
+    static void compare(Integer a[], int b) { //b : 기준값
+        int index=Arrays.asList(a).indexOf(b);
+
+        //오른쪽에 있는거
+        int index_right = index+1;
+        int alpha=a[index_right]; //정상출력
+        int index_alpha=alpha-b;
+
+        //왼쪽에 있는거
+        int index_left = index-1;
+        int beta=a[index_left]; //정상출력
+        int index_beta=b-beta;
+
+        if(index_alpha>index_beta) System.out.println(index_left+"번째에 있는 "+beta+"이(가) 가까워!");
+        else if(index_alpha==index_beta) System.out.println(index_left+"번째에 있는 "+beta+"이(가) 양쪽에 있어!");
+        else System.out.println(index_right+"번째에 있는 "+alpha+"이(가) 가까워!");
+    }
     public static void main(String[] args) { 
         Scanner sc = new Scanner(System.in);
 
@@ -20,25 +37,8 @@ class Approximate {
 
         //배열오름차순으로 정렬
         Arrays.sort(array);
-        int index=Arrays.asList(array).indexOf(value); // 위치값
-        
-        // System.out.println("너가 찾는 값인 "+value+"의 값은 " +index+"에 있어!");
-        // System.out.println("위치 잘 기억해놔!");
-        
-        //오른쪽에 있는거
-        int index_right = index+1;
-        int alpha=array[index_right]; //정상출력
-        int index_alpha=alpha-value;
 
-        //왼쪽에 있는거
-        int index_left = index-1;
-        int beta=array[index_left]; //정상출력
-        int index_beta=value-beta;
-
-        if(index_alpha>index_beta) System.out.println(index_left+"번째에 있는 "+beta+"이(가) 가까워!");
-        else if(index_alpha==index_beta) System.out.println(index_left+"번째에 있는 "+beta+"이(가) 양쪽에 있어!");
-        else System.out.println(index_right+"번째에 있는 "+alpha+"이(가) 가까워!");
-
+        compare(array, value);
         sc.close();
     }
 }
