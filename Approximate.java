@@ -2,6 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 class Approximate {
+    //비교 후 출력
     static void compare(Integer a[], int b) { //b : 기준값
         int index=Arrays.asList(a).indexOf(b);
 
@@ -16,7 +17,7 @@ class Approximate {
         int index_beta=b-beta;
 
         if(index_alpha>index_beta) System.out.println(index_left+"번째에 있는 "+beta+"이(가) 가까워!");
-        else if(index_alpha==index_beta) System.out.println(index_left+"번째에 있는 "+beta+"이(가) 양쪽에 있어!");
+        else if(index_alpha==index_beta) System.out.println(b+"가 중간값이고 격차는 ±"+index_alpha+"(이)야!");
         else System.out.println(index_right+"번째에 있는 "+alpha+"이(가) 가까워!");
     }
     public static void main(String[] args) { 
