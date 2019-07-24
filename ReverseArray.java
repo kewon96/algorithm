@@ -7,10 +7,10 @@ class ReverseArray {
         a[idx2] = t;
     }
 
-    static void reverse(int []a) {
-        for(int i=0; i<a.length/2; i++) {
-            swap(a, i, a.length-i-1);
-            System.out.println("a["+i+"]와 a[" + a.length-i + "]를 교환합니다.");
+    static void reverse(int a[]) {
+        for(int i=0; i<a.size/2; i++) {
+            swap(a, i, a.size-i-1);
+            System.out.println("a["+i+"]와 a[" + a.size-i + "]를 교환합니다.");
         }
     }
 
