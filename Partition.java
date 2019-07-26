@@ -8,10 +8,10 @@ class Partition {
         a[beta]=temp; //비어있는 두번째공간에 첫번째값을 넣음
     }
 
-    static void partition(int[] a, int n) {
-        int pl=0; //왼쪽
-        int pr=n-1; //오른쪽
-        int x=a[n/2]; //가운데(기준)값
+    static void partition(int[] a, int left, int right) {
+        int pl=left; //왼쪽
+        int pr=right; //오른쪽
+        int x=a[(pl+pr)/2]; //가운데(기준)값
 
         do {
             while(a[pl]<x) pl++;
@@ -19,22 +19,8 @@ class Partition {
             if(pl<=pr) swap(a, pl++, pr--);
         } while(pl<=pr);
 
-        System.out.println("기준값 = "+x);
-
-        System.out.println("기준값이하 그룹 : ");
-        for(int i=0; i<=pl-1; i++) System.out.print(a[i]+" ");
-        System.out.println();
-
-        if(pl>pr+1) {
-            System.out.println("기준값과 일치한 그룹");
-            for(int i=pr+1; i<=pr; i++) System.out.print(a[i]+" ");
-
-            System.out.println();
-        }
-
-        System.out.println("기준값 이상 그룹");
-        for(int i=pr+1; i<n; i++) System.out.print(a[i]+" ");
-        System.out.println();
+        if(left<pr) partition(a, left, pl);
+        if(pl<right) partition(a, pl, right);
     }
 
     public static void main(String[] args) {
@@ -49,7 +35,11 @@ class Partition {
             x[i]=sc.nextInt();
         }
 
-        partition(x, nx);
+        partition(x, 0, nx-1);
+
+        for(int i=0; i<nx; i++) {
+            System.out.print("x["+i+"] = ");
+        }
 
         sc.close();
     }
