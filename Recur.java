@@ -15,6 +15,6 @@ class Recur {
         System.out.println("정수를 입력하쇼 : ");
         int x=sc.nextInt();
 
-        recur(n);
+        recur(x);
     }
 }

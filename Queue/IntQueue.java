@@ -1,3 +1,5 @@
+package queue;
+
 public class IntQueue {
     private int max; //Queue volume
     private int front; //First element
@@ -12,7 +14,7 @@ public class IntQueue {
 
     //If Queue is Maximum
     public class OverflowIntQueueExcetion extends RuntimeException {
-        public EmptyIntQueueException() {}
+        public OverflowIntQueueExcetion() {}
     }
 
     //Create Queue
