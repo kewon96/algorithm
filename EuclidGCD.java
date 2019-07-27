@@ -15,5 +15,7 @@ class EuclidGCD {
         int y=sc.nextInt();
 
         System.out.println("GCD is "+gcd(x,y));
+
+        sc.close();
     }
 }

@@ -1,3 +1,5 @@
+package stack;
+
 public class IntStack {
     private int max; //Stack volume
     private int ptr; //Stack pointer -> Location of last data

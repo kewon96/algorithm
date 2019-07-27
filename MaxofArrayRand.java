@@ -16,7 +16,7 @@ class MaxofArrayRand {
         Random rand = new Random();
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("사람 수 : ");
+        System.out.print("사람 수 : ");
         int num = sc.nextInt();
 
         int[] height = new int[num];
