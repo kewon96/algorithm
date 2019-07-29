@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//정수상태판별
 class Judgment {
 
     public static void main(String[] args) {
