@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//유클리드호제법 -> 배열의 요소가 3개이상일 때
 class EuclidGCD_Q3 {
     static int gcd(int x, int y) {
         while(y!=0) {

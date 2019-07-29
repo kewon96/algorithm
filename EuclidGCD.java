@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//유클리드호제법
 class EuclidGCD {
     static int gcd(int x, int y) {
         if(y==0) return x;

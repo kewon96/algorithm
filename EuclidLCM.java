@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//유클리드호제법 -> 최소공배수
 class EuclidLCM {
     static int lcm(int x, int y) {
         return x*y/EuclidGCD.gcd(x, y);
