@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
+//약수인지 유무 판단
 class CD {
     public static void main(String[] args) {
-        //약수인지 유무 판단
+
         Scanner sc = new Scanner(System.in);
         System.out.print("정수하나 입력! -> ");
         int a=sc.nextInt();
