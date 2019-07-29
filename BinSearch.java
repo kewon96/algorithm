@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//이진검색 -> 정렬되있다는 전제가 있어야 함
 class BinSearch {
     static int BinSearch(int[] a, int n, int key) {
         int pl = 0;
@@ -10,7 +11,7 @@ class BinSearch {
             if(a[pc] == key) return pc;
             else if(a[pc] < key) pl=pc+1;
             else pr=pc-1;
-        }while(pl<=pr);
+        } while(pl<=pr);
 
         return -1;
     }
@@ -36,10 +37,12 @@ class BinSearch {
 
         System.out.print("검색할 값 : ");
         int ky = sc.nextInt();
-        //BinSearch사용
+        
         int idx = BinSearch(x, num, ky);
 
         if(idx==-1) System.out.println("없졍!");
         else System.out.println(ky+"는 x["+idx+"]에 있다.");
+        
+        sc.close();
     }
 }
