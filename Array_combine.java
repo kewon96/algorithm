@@ -1,8 +1,6 @@
+
+//짝수(0포함)번째는 문자형, 홀수번째는 정수형이 넣어지는 배열
 class Array_combine {
-    /**
-     * 짝수(0포함)번째는 문자형
-     * 홀수번째는 정수형이 넣어짐
-     */
 
     int j=0;
     public static void main(String[] args) {
