@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//퀵 정렬 -> 기준값을 잡은 뒤 그룹을 나누고 그 그룹내에서 정렬
 class Partition {
     //위치전환
     static void swap(int a[], int alpha, int beta) {
