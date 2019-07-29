@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//펙토리얼
 class Factorial {
     static int Factorial(int n) {
         if(n>0) return n*Factorial(n-1);
@@ -13,5 +14,7 @@ class Factorial {
         int x = sc.nextInt();
 
         System.out.println(x+"--->Factorial is---> "+Factorial(x));
+
+        sc.close();
     } 
 }

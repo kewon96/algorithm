@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//펙토리얼(원초인 P)
 class Factorial_v2 {
     static int Factorial(int n) {
         if(n>0) return n*Factorial(n-1);
