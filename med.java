@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//단순 최댓값출력 -> 여유공간 존재x
 class med {
 
     static int med1(int a, int b, int c) {
