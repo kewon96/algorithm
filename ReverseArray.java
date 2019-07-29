@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//배열 위치 변경 -> 각 양끝요소 변경
 class ReverseArray {
     static void swap(int[] a, int idx1, int idx2) {
         int t=a[idx1];
