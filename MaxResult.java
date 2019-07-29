@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//단순 최댓값출력
 class MaxResult {
 
     static int algorithm(int x, int y, int z) {
