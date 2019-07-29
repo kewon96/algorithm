@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//버블정렬(내림차순)
 class BubbleSort_DES {
 
     //위치조정

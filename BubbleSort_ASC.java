@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//버블정렬(오름차순)
 class BubbleSort_ASC {
 
     //위치조정
