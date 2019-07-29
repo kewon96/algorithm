@@ -19,8 +19,8 @@ class Partition {
             if(pl<=pr) swap(a, pl++, pr--);
         } while(pl<=pr);
 
-        if(left<pr) partition(a, left, pl);
-        if(pl<right) partition(a, pl, right);
+        if(left<pr) partition(a, left, pl); //처음위치~중간위치-1
+        if(pl<right) partition(a, pl, right); //중간위치+1~마지막위치
     }
 
     public static void main(String[] args) {
@@ -38,7 +38,7 @@ class Partition {
         partition(x, 0, nx-1);
 
         for(int i=0; i<nx; i++) {
-            System.out.print("x["+i+"] = ");
+            System.out.println("x["+i+"] = "+x[i]);
         }
 
         sc.close();
