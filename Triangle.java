@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//삼각형만들기
 class Triangle {
     public static void main(String[] args) {
 
