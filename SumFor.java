@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//배열의 총 합 -> for 사용
 class SumFor {
 
     public static void main(String[] args) {

@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//단순 배열의 총 합
 class SUM {
 
     public static void main(String[] args) {
