@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-//Q6합침
+//Arrays.binarySearch를 이용한 검색 -> 이진검색
 class BinSearchTester {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
