@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//단순삽입정렬
 class InsertionSort {
     static void InsertionSort(int[] a, int n) {
         for(int i=0; i<n; i++) {
