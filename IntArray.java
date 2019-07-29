@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//배열
 class IntArray {
 
     public static void main(String[] args) {

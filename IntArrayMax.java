@@ -1,5 +1,6 @@
 class IntArrayMax {
 
+    //배열 -> 배열에서 제일 큰 값 출력(음수가 있는 전제)
     public static void main(String[] args) {
 
         int a[] = new int[4];
