@@ -40,5 +40,6 @@ class EuclidGCD_Q3 {
         }
 
         System.out.println("GCD is "+gcdArray(x,0,num));
+        sc.close();
     }
 }
