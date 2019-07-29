@@ -1,6 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
+//랜덤한 변수가 저장된 배열 -> 최댓값출력
 class MaxofArrayRand {
     static int maxof(int[] a){
         int max = a[0];
