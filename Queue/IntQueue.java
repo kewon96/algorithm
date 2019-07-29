@@ -1,5 +1,7 @@
 package queue;
 
+//Queue방식 데이터쌓기
+
 public class IntQueue {
     private int max; //Queue volume
     private int front; //First element

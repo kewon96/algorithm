@@ -2,6 +2,7 @@ package queue;
 
 import java.util.Scanner;
 
+//Queue방식 데이터쌓기 응용
 class IntQueueTester {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
