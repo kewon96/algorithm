@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+//기준값의 근삿값 출력
 class Approximate {
     //비교 후 출력
     static void compare(Integer a[], int b) { //b : 기준값
