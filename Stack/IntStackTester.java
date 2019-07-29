@@ -2,6 +2,7 @@ package stack;
 
 import java.util.Scanner;
 
+//Queue방식 데이터쌓기응용
 class IntStackTester {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

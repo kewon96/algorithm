@@ -1,5 +1,6 @@
 package stack;
 
+//Stack방식 데이터쌓기
 public class IntStack {
     private int max; //Stack volume
     private int ptr; //Stack pointer -> Location of last data
