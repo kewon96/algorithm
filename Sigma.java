@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//배열요소들의 총 합 -> 재귀함수사용
 class Sigma {
 
     static int Sigma(int a) {
