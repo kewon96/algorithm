@@ -13,7 +13,7 @@ class Triangle {
             System.out.println("몇층쌓을꺼야?");
             n=stdIn.nextInt();
         } while(n <= 0);
-
+        
         /*왼쪽 위
         for(int i=1; i<=n; i++) {
             for(int j=n; j>=i; j--) 
@@ -22,6 +22,14 @@ class Triangle {
                 System.out.println();
         }
         */
+        
+        // for(int i=1; i<=n; i++) {
+        //     for(int j=n; j>=i; j--) 
+        //         System.out.print('*');
+
+        //         System.out.println();
+        // }
+        
 
         for(int i=1; i<=n; i++) {
             for(int j=1; j<n-i+1; j++) {
