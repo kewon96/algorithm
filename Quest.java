@@ -8,18 +8,13 @@ class Quest {
         int a=sc.nextInt(); //제한값 삽입
         int exp=1;
         int i=1;
-        int j=1;
 
-        for (; i<10000; i++) {
-            for (; j<10000; j++) {
-                if(i==j) {
-                    exp=i*j;
-                    if(exp<a) {
-                        System.out.println(exp);
-                        break;
-                    }
-                }
+        for(; i<a; i++) {
+            if(i*i<a) {
+                exp=i*i;
+                System.out.println(exp);
             }
+            //else System.out.println();
         }
     }
     // 1,2,3,4,5,6,7,8
