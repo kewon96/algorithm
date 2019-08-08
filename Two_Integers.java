@@ -10,6 +10,37 @@ class Two_Integers {
         return (b - a + 1) * (a + b) / 2; //등차수열의 합 공식
     }
 
+    // 무난한 코드
+    // public long solution(int a, int b) {
+    //     long answer = 0;
+    //     if(a!=b){
+    //         for(int i=Math.min(a,b);i<=Math.max(a,b);i++){
+    //             answer+=i;
+    //         }
+    //     }else{
+    //         answer=a;
+    //     }
+    //     return answer;
+    // }
+
+    // 내가 짠 코드(Math()클래스에 최대최소뽑아주는 메소드가 있는 점을 모름)
+    // public long solution(int a, int b) {
+    //     long answer = 0;
+    //     if(a>b) {
+    //         for(int i=b; i<=a; i++) {
+    //             answer+=i;
+    //         }
+    //     }
+    //     else if(a<b) {
+    //         for(int i=a; i<=b; i++) {
+    //             answer+=i;
+    //         }
+    //     }
+    //     else answer=a;
+        
+    //     return answer;
+    // }
+
     public static void main(String[] a) {
         Two_Integers ti = new Two_Integers();
         Scanner sc = new Scanner(System.in);
