@@ -18,7 +18,7 @@ class Middle_CharOrString {
 
     public static void main(String[] a) {
         Scanner sc = new Scanner(System.in);
-        test t = new test();
+        Middle_CharOrString t = new Middle_CharOrString();
         String s=sc.next();
 
         System.out.println(t.solution(s));
