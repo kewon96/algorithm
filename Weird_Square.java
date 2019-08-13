@@ -25,9 +25,6 @@ public class Weird_Square{
                 arr[i][j] = (k + 1) / (j + 1);
             }
         }
-        
-
-        
 
         while (true)
         { 
